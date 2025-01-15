@@ -1,0 +1,35 @@
+""" Anwar, an electrical engineer, is designing a circuit involving complex impedance. He has two impedance values, each represented as complex numbers. He needs to modify these values by negating the imaginary component (representing the inductive reactance) while doubling the real component (representing the resistance). 
+
+
+
+Your task is to help Anwar by computing the modified impedance values.
+
+Input format :
+The first line of input consists of an integer r1, representing the real part of the first complex impedance.
+
+The second line consists of an integer i1, representing the imaginary part of the first complex impedance.
+
+The third line consists of an integer r2, representing the real part of the second complex impedance.
+
+The fourth line consists of an integer i2, representing the imaginary part of the second complex impedance.
+
+Output format :
+The first line of output displays the modified first complex impedance in the format complex(real, imaginary).
+
+The second line displays the modified second complex impedance in the format complex(real, imaginary)."""
+
+
+# You are using Python
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+complex1 = complex(a, b)
+complex2 = complex(c, d)
+
+modified_complex1 = complex(a * 2, - b)
+modified__complex2 = complex(c * 2, - d)
+
+print(modified_complex1)
+print(modified__complex2)
